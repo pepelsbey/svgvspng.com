@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SVG vs PNG</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		html {
+			display: flex;
+			height: 100%;
+			}
+		body {
+			margin: auto;
+			background: #FFF;
+			color: #000;
+			font-family: Comic Sans MS, Marker Felt, fantasy;
+			}
+		h1 {
+			font-weight: normal;
+			font-size: 90px;
+			}
+			h1 a {
+				color: #000;
+				text-decoration: none;
+				}
+		object {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background: #FFF;
+			opacity: 0;
+			}
+			object + a {
+				position: fixed;
+				z-index: 2;
+				top: 20px;
+				color: #000;
+				text-decoration: none;
+				}
+			object + a[href='#en'] {
+				right: 80px;
+				}
+			object + a[href='#de'] {
+				right: 50px;
+				}
+			object + a[href='#ru'] {
+				right: 20px;
+				}
+		object:target {
+			opacity: 1;
+			}
+			object:target + a {
+				color: #BBB;
+				cursor: default;
+				}
+	</style>
+	<script>
+		function intro() {
+			var langs = ['en', 'de', 'ru'];
+			if(langs.indexOf(location.hash.replace(/#/, '')) == -1) {
+				location.hash = '#' + langs[ 0 ];
+			} else {
+				return;
+			}
+		}
+		window.onload = intro;
+	</script>
+</head>
+<body>
+	<h1><a href="#en">SVG vs PNG</a></h1>
+
+	<object id="en" data="en.svg" type="image/svg+xml"></object>
+	<a href="#en" hreflang="en" title="English">EN</a>
+	<!--
+		Author: Vadim Makeev, https://pepelsbey.net/
+
+		Inspired by “SVG vs PNG” comix by Lockal, http://moarcpp.blogspot.com/
+		which was inspired by Louis Brandy’s “PNG vs JPEG” comix: http://lbrandy.com/blog/2008/10/my-first-and-last-webcomic/
+		which was inspired by original xkcd comix: http://xkcd.com/
+		which was inspired by… hell if I know.
+	-->
+
+	<object id="de" data="de.svg" type="image/svg+xml"></object>
+	<a href="#de" hreflang="de" title="Deutch">DE</a>
+	<!--
+		Autor: Vadim Makeev, https://pepelsbey.net/
+
+		Basiert auf dem Comic “SVG vs PNG” Lockal, http://moarcpp.blogspot.com/
+		der seinerseits auf dem Comic “PNG vs JPEG” von Louis Brandy basiert ist: http://lbrandy.com/blog/2008/10/my-first-and-last-webcomic/
+		der seinerseits seinen Ursprung im Originacomic xkcd findet: http://xkcd.com/
+		deren Ursprung… uns leider unbekannt ist.
+	-->
+
+	<object id="ru" data="ru.svg" type="image/svg+xml"></object>
+	<a href="#ru" hreflang="ru" title="Русский">RU</a>
+	<!--
+		Автор: Вадим Макеев, https://pepelsbey.net/
+
+		Основано на комиксе «SVG vs PNG» Lockal, http://moarcpp.blogspot.com/
+		основанном на комиксе «PNG vs JPEG» Луи Брэнди: http://lbrandy.com/blog/2008/10/my-first-and-last-webcomic/
+		основанном на оригинальном комиксе xkcd: http://xkcd.com/
+		основанном на… чёрт знает на чём.
+	-->
+
+	<script>(function(b,c,a){(c[a]=c[a]||[]).push(function(){try{c.yaCounter1570355=new Ya.Metrika({id:1570355})}catch(a){}});var e=b.getElementsByTagName('script')[0],d=b.createElement('script'),a=function(){e.parentNode.insertBefore(d,e)};d.async=!0;d.src='https://mc.yandex.ru/metrika/watch.js';'[object Opera]'==c.opera?b.addEventListener('DOMContentLoaded',a):a()})(document,window,'yandex_metrika_callbacks');</script><noscript><img src="https://mc.yandex.ru/watch/1570355" alt=""></noscript>
+</body>
+</html>
