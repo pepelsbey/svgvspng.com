@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: light) {
+	.page {
+		--background: #ffffff;
+		--text: #1c1b22;
+
+		color-scheme: light;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.page {
+		--background: #1c1b22;
+		--text: #ffffff;
+
+		color-scheme: dark;
+	}
+}
+
+.page {
+	height: 100%;
+	background-color: var(--background);
+	color: var(--text);
+}
+
+.page__body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Shantell Sans', sans-serif;
+	font-weight: 600;
+}

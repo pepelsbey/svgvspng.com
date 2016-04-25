@@ -1,0 +1,7 @@
+@import url('fonts.css');
+@import url('box-model.css');
+
+@import url('blocks/page.css');
+@import url('blocks/info.css');
+@import url('blocks/languages.css');
+@import url('blocks/comic.css');

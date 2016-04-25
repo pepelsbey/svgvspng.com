@@ -1,0 +1,34 @@
+.comic {
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: calc(100vw - 4rem);
+	height: calc(100vh - 12rem);
+	fill: black;
+}
+
+@media (prefers-color-scheme: dark) {
+	.comic {
+		filter: invert(1);
+	}
+}
+
+.comic__text {
+	text-transform: uppercase;
+}
+
+.comic__line {
+	stroke: black;
+	stroke-width: 3px;
+	stroke-linecap: round;
+}
+
+.comic__frame {
+	fill: none;
+	stroke: black;
+	stroke-width: 3px;
+}
+
+.comic__bitmap {
+	image-rendering: pixelated;
+}
