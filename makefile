@@ -1,4 +1,4 @@
 publish:
 	@echo 'Uploading files…'
-	@rsync -az .htaccess de.svg en.svg ru.svg index.html pepelsbey@pepelsbey.net:svgvspng.com/
+	@rsync -az de.svg en.svg ru.svg index.html pepelsbey@46.101.148.11:/var/www/svgvspng.com/html/
 	@echo 'Done.'
