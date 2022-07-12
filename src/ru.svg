@@ -8,22 +8,25 @@
 				font-weight: bold;
 				font-size: 14px;
 				font-family: Comic Sans MS, Marker Felt, fantasy;
-				}
+			}
+
 			.caption {
 				font-weight: normal;
 				font-size: 24px;
-				}
+			}
+
 			.line {
 				fill: none;
 				stroke: #000;
 				stroke-width: 3;
 				stroke-linecap: round;
-				}
+			}
+
 			.frame {
 				fill: none;
 				stroke: #000;
 				stroke-width: 4px;
-				}
+			}
 		</style>
 	</defs>
 
