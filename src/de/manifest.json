@@ -1,0 +1,28 @@
+{
+	"name": "SVG vs PNG",
+	"description": "Ein Einzelbild-Comic, der Sie zum Nachdenken über den Unterschied zwischen den Bildformaten SVG und PNG anregt.",
+	"lang": "de",
+	"dir": "ltr",
+	"id": "/",
+	"start_url": "/",
+	"theme_color": "#1c1b22",
+	"display": "browser",
+	"orientation": "natural",
+	"icons": [
+		{
+			"src": "../icons/192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "../icons/512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "../icons/any.svg",
+			"type": "image/svg+xml",
+			"sizes": "any"
+		}
+	]
+}
