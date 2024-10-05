@@ -9,13 +9,13 @@
 	<link rel="icon" href="../favicon.ico" sizes="32x32">
 	<link rel="apple-touch-icon" href="../icons/180.png">
 	<link rel="manifest" href="manifest.json">
-	<script defer src="../scripts/index.js"></script>
 </head>
 <body class="page__body">
 	<div class="info">
-		<button class="info__button" type="button" aria-pressed="false">I</button>
-		<p class="info__description" hidden>
+		<button class="info__button" type="button" popovertarget="info">I</button>
+		<p class="info__description" id="info" popover>
 			Inspired by the “SVG vs PNG” comix by Lockal, which was inspired by Louis Brandy’s “PNG vs JPEG” comix, which was inspired by the original xkcd comix, which was inspired by… hell if I know.
+			<button class="info__button info__button--close" type="button" popovertarget="info">X</button>
 		</p>
 	</div>
 	<nav class="languages">
