@@ -1,8 +1,18 @@
 {
 	"scripts": {
 		"files": "rm -rf dist && rsync --archive --exclude styles src/ dist/",
-		"styles": "npx lightningcss-cli --bundle src/styles/index.css --output-file dist/styles/index.css",
+		"styles": "npx lightningcss-cli --browserslist --bundle --minify src/styles/index.css --output-file dist/styles/index.css",
 		"build": "npm run files && npm run styles",
 		"start": "npx @11ty/eleventy-dev-server --dir=src"
-	}
+	},
+	"browserslist": [
+		"Chrome > 0 and last 2.5 years",
+		"ChromeAndroid > 0 and last 2.5 years",
+		"Edge > 0 and last 2.5 years",
+		"Firefox > 0 and last 2.5 years",
+		"FirefoxAndroid > 0 and last 2.5 years",
+		"Safari > 0 and last 2.5 years",
+		"iOS > 0 and last 2.5 years",
+		"not dead"
+	]
 }

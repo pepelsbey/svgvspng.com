@@ -1,14 +1,10 @@
-@media (prefers-color-scheme: light) {
-	.page {
-		--background: #ffffff;
-		--text: #1c1b22;
+.page {
+	--background: #ffffff;
+	--text: #1c1b22;
 
-		color-scheme: light;
-	}
-}
+	color-scheme: light;
 
-@media (prefers-color-scheme: dark) {
-	.page {
+	@media (prefers-color-scheme: dark) {
 		--background: #1c1b22;
 		--text: #ffffff;
 

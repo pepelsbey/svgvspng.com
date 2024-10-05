@@ -5,10 +5,8 @@
 	width: calc(100vw - 4rem);
 	height: calc(100vh - 12rem);
 	fill: black;
-}
 
-@media (prefers-color-scheme: dark) {
-	.comic {
+	@media (prefers-color-scheme: dark) {
 		filter: invert(1);
 	}
 }
