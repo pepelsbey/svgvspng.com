@@ -2,6 +2,7 @@
 	"scripts": {
 		"files": "rm -rf dist && rsync --archive --exclude styles src/ dist/",
 		"styles": "npx lightningcss-cli --bundle src/styles/index.css --output-file dist/styles/index.css",
-		"build": "npm run files && npm run styles"
+		"build": "npm run files && npm run styles",
+		"start": "npx @11ty/eleventy-dev-server --dir=src"
 	}
 }
