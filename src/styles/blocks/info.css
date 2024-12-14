@@ -41,7 +41,10 @@
 	border: none;
 	border-radius: 1.4rem;
 	background-color: var(--text);
-	color-scheme: light;
 	color: var(--background);
 	line-height: 1.5;
+
+	a {
+		color: inherit;
+	}
 }
