@@ -3,11 +3,8 @@
 	"type": "module",
 	"scripts": {
 		"files": "rm -rf dist && rsync --archive --exclude styles src/ dist/",
-		"styles": "npx lightningcss-cli --browserslist --bundle --minify src/styles/index.css --output-file dist/styles/index.css",
+		"styles": "npx lightningcss-cli --bundle --minify src/styles/index.css --output-file dist/styles/index.css",
 		"build": "npm run files && npm run styles",
 		"start": "npx @11ty/eleventy-dev-server --dir=src"
-	},
-	"browserslist": [
-		"baseline widely available, safari 15"
-	]
+	}
 }
