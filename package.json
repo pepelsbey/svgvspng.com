@@ -1,10 +1,26 @@
 {
 	"private": true,
 	"type": "module",
+	"engines": {
+		"node": "22"
+	},
 	"scripts": {
-		"files": "rm -rf dist && rsync --archive --exclude styles src/ dist/",
-		"styles": "npx lightningcss-cli --bundle --minify src/styles/index.css --output-file dist/styles/index.css",
-		"build": "npm run files && npm run styles",
-		"start": "npx @11ty/eleventy-dev-server --dir=src"
+		"start": "eleventy --serve --quiet",
+		"build": "rm -rf dist && eleventy"
+	},
+	"browserslist": [
+		"baseline widely available, safari 15"
+	],
+	"stylelint": {
+		"extends": [
+			"stylelint-config-pepelsbey"
+		]
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^3.1.2",
+		"lightningcss": "^1.30.2",
+		"stylelint": "^16.26.1",
+		"stylelint-config-pepelsbey": "^1.0.1",
+		"stylelint-order": "^7.0.0"
 	}
 }

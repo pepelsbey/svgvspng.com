@@ -7,13 +7,13 @@
 
 .languages__link {
 	display: grid;
+	place-items: center;
 	width: 2rem;
 	height: 2rem;
-	place-items: center;
-	text-decoration: none;
 	border-radius: 50%;
 	background-color: var(--text);
 	color: var(--background);
+	text-decoration: none;
 
 	&[aria-current="page"] {
 		background-color: var(--background);

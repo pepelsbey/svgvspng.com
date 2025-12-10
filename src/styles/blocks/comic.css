@@ -17,14 +17,14 @@
 
 .comic__line {
 	stroke: black;
-	stroke-width: 3px;
 	stroke-linecap: round;
+	stroke-width: 3px;
 }
 
 .comic__frame {
-	fill: none;
 	stroke: black;
 	stroke-width: 3px;
+	fill: none;
 }
 
 .comic__bitmap {
